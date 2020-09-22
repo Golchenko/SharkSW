@@ -1,0 +1,148 @@
+.navbar {
+    background-color: $blue;
+    text-transform: uppercase;
+    padding: 20.5px 0;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 9px;
+        width: 100%;
+        background-image: url(/img/header/navbar-border.png);
+        background-repeat: repeat-x;
+    }
+}
+
+.navbar-brand {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px;
+}
+
+.navbar-brand .logo {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 30px;
+}
+
+.nav-item {
+    margin-left: 10px;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 0;
+        max-width: 70%;
+    }
+}
+
+.nav-item .current {
+    background-color: #5e9f9a;
+    border-radius: 5px;
+    border-bottom: 3px solid #538b86;
+}
+
+.nav-link:not(.current):hover,
+.nav-link:focus {
+   @include button-style;
+}
+
+header .navbar .navbar-nav .nav-link {
+    color: $white;
+    padding: 8px 15px;
+}
+
+header .navbar .navbar-nav .nav-link:hover {
+    color: $white;
+}
+
+header .navbar .navbar-nav .nav-link,
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.fa {
+    color: $white;
+}
+
+.dropdown-nav:before {
+    content: "\f107";
+    font-family: "FontAwesome";
+}
+
+.nav-item .dropdown-menu {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: $burgundy;
+    border: none;
+    padding: 5px 5px 0 5px;
+    margin-top: 12px;
+
+    &:before {
+        content: "\f0d8";
+        color: $burgundy;
+        font-family: "FontAwesome";
+        position: absolute;
+        top: -15px;
+        left: 12px;
+        width: 12px;
+        height: 6px;
+    }
+
+    @include media-breakpoint-down(md) {
+        position: relative;
+        float: left;
+    }
+}
+
+.dropdown-item {
+    color: $white;
+    font-family: "OpenSans-Semibold";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-transform: none;
+    background-color: $red-2;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 17px;
+
+    &:before {
+        content: "\f105";
+        font-family: "FontAwesome";
+        margin-right: 9px;
+    }
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.search-menu {
+    min-width: 19rem;
+    padding-bottom: 5px;
+
+    &:before {
+        left: 280px;
+    }
+}
+
+.search-button {
+    background-color: $red-2;
+    border: none;
+    color: $white;
+    outline: none;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
