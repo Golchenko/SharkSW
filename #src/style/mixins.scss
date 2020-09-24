@@ -6,9 +6,23 @@
 
 @mixin button-style {
     background-color: $red-2;
+    color: $white;
     border-radius: 5px;
     border-bottom: 3px solid $burgundy;
-    color: $white;
 }
 
+@mixin button-style-2 {
+    background-color: $blue;
+    color: $white;
+    border-radius: 5px;
+    border-bottom: 3px solid $blue-1;
+}
+
+@mixin button-box {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

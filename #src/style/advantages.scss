@@ -1,0 +1,165 @@
+.advantages {
+    background-color: $light-grey-4;
+    background-image: linear-gradient(to top, #f3f3f3 450px, transparent 34px);
+    min-height: 400px;
+    position: relative;
+    padding-top: 68px;
+    margin-bottom: 60px;
+    /* 
+    @include media-breakpoint-down(md) {
+        background-image: linear-gradient(to top, #f3f3f3 200px, transparent 34px);
+
+    } */
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 19px;
+        background-image: url(/img/advantages/border-light.png);
+        background-repeat: repeat-x;
+    }
+}
+
+.advantages-title {
+    color: $Burgundy-2;
+    font-family: "OpenSans-Semibold";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantages-description {
+    color: $grey;
+    text-align: center;
+}
+
+.advantages-header {
+    margin-bottom: 55px;
+}
+
+.advantages-images-block {
+    position: relative;
+    margin-bottom: 115px;
+}
+
+.advantages-img {
+    display: block;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 570px;
+    height: auto;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+        max-width: 400%;
+        top: -216px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        max-width: 480px;
+    }
+}
+
+.secondary-image {
+    padding-top: 60px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 0;
+        margin: 0 auto;
+        padding-bottom: 120px;
+    }
+}
+
+.column-title {
+    color: $grey-2;
+    font-family: "OpenSans-Extrabold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.7px;
+    @include reset-list;
+    padding-bottom: 26px;
+}
+
+.clients-list {
+    padding-left: 15px;
+}
+
+.clients-item {
+    color: $grey;
+    line-height: 26px;
+    list-style: none;
+    position: relative;
+
+    &:before {
+        content: "\f061";
+        position: absolute;
+        top: 6px;
+        left: -15px;
+        width: 10px;
+        height: 12px;
+        color: $Burgundy-2;
+        font-family: "FontAwesome";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+    }
+}
+
+.skills-description {
+    color: $grey;
+    line-height: 24.7px;
+    margin-bottom: 0;
+
+    & .highlighted-text {
+        color: $Burgundy-2;
+        text-decoration: underline;
+    }
+}
+
+.skills-description-block {
+    padding-bottom: 60px;
+}
+
+.graph-title {
+    color: $grey-2;
+    font-family: "OpenSans-Extrabold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.graph-item {
+    padding-bottom: 20px;
+}
+
+.feedback-text {
+    color: $grey;
+    line-height: 24.7px;
+    background-color: $light-grey;
+    padding: 16px;
+    margin-bottom: 0;
+    & .italic-style {
+        font-style: italic;
+    }
+}
+
+.feedback-author {
+    color: $grey;
+    font-family: "OpenSans-Semibold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.4px;
+    padding-left: 59px;
+}

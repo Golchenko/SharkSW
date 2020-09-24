@@ -1,4 +1,4 @@
-//= script.js
+
 
 //= ../../node_modules/jquery/dist/jquery.js
 
@@ -17,3 +17,4 @@
 //= ../../node_modules/bootstrap/js/dist/tab.js
 //= ../../node_modules/bootstrap/js/dist/toast.js
 
+//= script.js

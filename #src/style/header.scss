@@ -16,15 +16,17 @@
     }
 }
 
-.navbar-brand {
+.main-logo {
     font-size: 20px;
     line-height: 20px;
     padding: 8px;
+    color: $white;
 }
 
-.navbar-brand .logo {
+.main-logo .logo {
     font-family: "OpenSans-ExtraBold";
     font-size: 30px;
+    color: $white;
 }
 
 .nav-item {
