@@ -1,8 +1,12 @@
 .navbar {
     background-color: $blue;
     text-transform: uppercase;
-    padding: 20.5px 0;
+    min-height: 80px;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+        min-height: 60px;
+    }
 
     &:after {
         position: absolute;
@@ -46,7 +50,7 @@
 
 .nav-link:not(.current):hover,
 .nav-link:focus {
-   @include button-style;
+    @include button-style;
 }
 
 header .navbar .navbar-nav .nav-link {
@@ -70,6 +74,7 @@ header .navbar .navbar-nav .nav-link,
 .dropdown-nav:before {
     content: "\f107";
     font-family: "FontAwesome";
+    margin-right: 5px;
 }
 
 .nav-item .dropdown-menu {
@@ -78,7 +83,7 @@ header .navbar .navbar-nav .nav-link,
     height: auto;
     background-color: $burgundy;
     border: none;
-    padding: 5px 5px 0 5px;
+    padding: 5px;
     margin-top: 12px;
 
     &:before {
@@ -96,6 +101,14 @@ header .navbar .navbar-nav .nav-link,
         position: relative;
         float: left;
     }
+}
+
+.nav-item .search-dropdown::before {
+    left: 278px;
+}
+
+.nav-item .portfolio-menu {
+    padding-bottom: 0;
 }
 
 .dropdown-item {
@@ -123,7 +136,7 @@ header .navbar .navbar-nav .nav-link,
     }
 }
 
-.search-menu {
+.search-dropdown {
     min-width: 19rem;
     padding-bottom: 5px;
 
@@ -137,6 +150,7 @@ header .navbar .navbar-nav .nav-link,
     border: none;
     color: $white;
     outline: none;
+    padding-right: 14px;
 
     &:hover {
         background-color: $blue;

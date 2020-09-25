@@ -80,6 +80,18 @@
     cursor: pointer;
 }
 
+.community {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.company {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
 .company-title,
 .community-title {
     color: #3b6360;
@@ -88,6 +100,11 @@
     line-height: 24px;
 }
 
+.posts {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
 .posts-title {
     font-family: "OpenSans-Semibold";
     font-size: 25px;
@@ -158,7 +175,3 @@
     line-height: 50px;
     margin: 0;
 }
-
-
-
-

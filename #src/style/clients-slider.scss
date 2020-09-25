@@ -13,6 +13,10 @@
         background-color: $light-grey-3;
         border-radius: 50%;
     }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }
 
 .clients-title {
@@ -32,21 +36,39 @@
 .item-logo {
     background-color: $light-grey;
     height: 90px;
+    max-width: 48%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-bottom: 15px;
 
-    &:nth-child(6n) {
-        margin-right: 0;
+    @include media-breakpoint-up(sm) {
+        max-width: 32%;
     }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 15%;
+    }
+
+/*     @include media-breakpoint-up(md) {
+        max-width: 32%;
+    } */
+
+    
 }
 
 .controls {
     width: 40px;
     height: 40px;
-    background-color: $burgundy;
+    background-color: $grey-4;
     border-radius: 3px;
+    border-bottom: 3px solid $grey-2;
+    opacity: 1;
+
+    &:hover {
+        background-color: $burgundy;
+        border-bottom: none;
+    }
 }
 
 .slider-buttons {

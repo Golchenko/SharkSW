@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>MODUS versus</title>
 </head>
 
 
@@ -36,7 +37,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Portfolio
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu portfolio-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Portfolio 2 column page</a>
                                 <a class="dropdown-item" href="#">Portfolio 2 column page</a>
                                 <a class="dropdown-item" href="#">Portfolio 2 column page</a>
@@ -52,11 +53,11 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link " href="#" id="searchDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-search fa-lg"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right search-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu dropdown-menu-right search-dropdown" aria-labelledby="navbarDropdown">
                                 <form class="form-inline my-2 my-lg-0">
                                     <input class="form-control mr-sm-2" type="search" placeholder="Search"
                                         aria-label="Search">
@@ -169,7 +170,7 @@
             </div>
             <div class="row advantages-images-block">
                 <div class="col-lg">
-                    <img src="img/advantages/adv-1.png" alt="image" class="advantages-img secondary-image">
+                    <img src="img/advantages/adv-1.png" alt="image" class="advantages-img secondary-image first-image">
                 </div>
                 <div class="col-lg">
                     <img src="img/advantages/adv-2.png" alt="image" class="advantages-img top-image">
@@ -180,7 +181,7 @@
             </div>
             <div class="advantages-footer">
                 <div class="row">
-                    <div class="col-lg-3 left-column">
+                    <div class="col-lg-3 choose-us">
                         <p class="column-title">Why Choose Us ?</p>
                         <ul class="clients-list">
                             <li class="clients-item">Quisque at massa ipsum</li>
@@ -194,33 +195,35 @@
                     <div class="col-lg-6 center-column">
                         <div class="skills-description-block">
                             <p class="skills-description">Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam
-                                auctor diam pellentesque lectus <span class="highlighted-text">vehicula mattis.</span> Nulla ac massa at dolor
+                                auctor diam pellentesque lectus <span class="highlighted-text">vehicula mattis.</span> Nulla
+                                ac massa at dolor
                                 condimentum eleifend vitae vitae urna.</p>
                         </div>
-                        <div class="row skills-graph">
-                            <div class="col">
-                                <img src="img/advantages/skills-1.png" alt="Skill one" class="graph-item">
+                        <div class="skills-graph d-flex justify-content-between">
+                            <div class="graph-item">
+                                <img src="img/advantages/skills-1.png" alt="Skill one" class="graph-img">
                                 <p class="graph-title">Suspendisse</p>
                             </div>
-                            <div class="col">
-                                <img src="img/advantages/skills-2.png" alt="Skill one" class="graph-item">
+                            <div class="graph-item">
+                                <img src="img/advantages/skills-2.png" alt="Skill one" class="graph-img">
                                 <p class="graph-title">Maecenas</p>
                             </div>
-                            <div class="col">
-                                <img src="img/advantages/skills-3.png" alt="Skill one" class="graph-item">
+                            <div class="graph-item">
+                                <img src="img/advantages/skills-3.png" alt="Skill one" class="graph-img">
                                 <p class="graph-title">Aliquam</p>
                             </div>
-                            <div class="col">
-                                <img src="img/advantages/skills-4.png" alt="Skill one" class="graph-item">
+                            <div class="graph-item">
+                                <img src="img/advantages/skills-4.png" alt="Skill one" class="graph-img">
                                 <p class="graph-title">Habitasse</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 feedback-column">
                         <p class="column-title">What Client’s Say ?</p>
-                        <p class="feedback-text"><span class="italic-style">Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam
-                            pellentesque lectus vehicula mattis.</span> Nulla ac massa at dolor condimentum</p>
-                            <span class="feedback-author">Jhon Doe</span>
+                        <p class="feedback-text"><span class="italic-style">Curabitur quis nisl in leo euismod venenatis eu
+                                in diam. Etiam auctor diam
+                                pellentesque lectus vehicula mattis.</span> Nulla ac massa at dolor condimentum</p>
+                        <span class="feedback-author">Jhon Doe</span>
                     </div>
                 </div>
             </div>
@@ -228,13 +231,13 @@
     </section>
     <section class="clients-slider">
         <div class="container">
-            <div class="row clients-slider-header">
-                <div class="col">
+            <div class="row clients-slider-header d-flex justify-content-between">
+                <div class="col col-sm-8 col-md-4 col-lg-3 col-xl-3">
                     <h2 class="column-title clients-title">Our Happy Clients</h2>
                 </div>
-                <div class="col-9 line">
+                <div class="col-md-5 col-lg-6 col-xl-7 line">
                 </div>
-                <div class="col-1 slider-buttons">
+                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1 slider-buttons">
                     <a class="carousel-control-prev arrow-prew controls" href="#clients-slider" role="button"
                         data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -250,45 +253,45 @@
             <div id="clients-slider" class="carousel slide clients-carousel" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active clients-carousel-item">
-                        <div class="row">
-                            <div class="col-sm item-logo">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-6 col-sm-4  col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="1 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="2 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="3 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="4 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="5 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="6 slide">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item clients-carousel-item">
-                        <div class="row">
-                            <div class="col-sm item-logo">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-6 col-sm-4  col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="1 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="2 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="3 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="4 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="5 slide">
                             </div>
-                            <div class="col-sm item-logo">
+                            <div class="col-6 col-sm-4 col-xl-2 item-logo">
                                 <img class="d-block slide-img" src="img/clients-slider/jquery.png" alt="6 slide">
                             </div>
                         </div>
@@ -302,7 +305,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 contacts">
+                    <div class="col contacts">
                         <a class="main-logo footer-logo" href="#"><span class="logo">Modus</span>versus</a>
                         <p class="contacts-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
@@ -379,7 +382,7 @@
                     <div class="col">
                         <p class="copyright">2013 ModusVersus</p>
                     </div>
-                    <div class="col-2 socials">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2 socials">
                         <ul class="socials-list d-flex justify-content-between">
                             <li class="socials-item"><a href="#" class="fa fa-facebook fa-2x"><span class="visually-hidden">Facebook</span></a></li>
                             <li class="socials-item"><a href="#" class="fa fa-google-plus fa-2x"><span class="visually-hidden">Google plus</span></a></li>

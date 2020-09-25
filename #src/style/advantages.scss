@@ -5,11 +5,18 @@
     position: relative;
     padding-top: 68px;
     margin-bottom: 60px;
-    /* 
-    @include media-breakpoint-down(md) {
-        background-image: linear-gradient(to top, #f3f3f3 200px, transparent 34px);
 
-    } */
+    
+
+    @include media-breakpoint-down(md) {
+        padding-top: 40px;
+        background-image: linear-gradient(to top, #f3f3f3 900px, transparent 34px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 0px;
+    }
+   
 
     &::before {
         content: "";
@@ -40,11 +47,21 @@
 
 .advantages-header {
     margin-bottom: 55px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+    }
 }
 
 .advantages-images-block {
     position: relative;
     margin-bottom: 115px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }
 
 .advantages-img {
@@ -68,6 +85,11 @@
     @include media-breakpoint-down(lg) {
         max-width: 480px;
     }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 380px;
+        top: -195px;
+    }
 }
 
 .secondary-image {
@@ -76,7 +98,33 @@
     @include media-breakpoint-down(md) {
         padding-top: 0;
         margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 300px;
+    }
+}
+
+.first-image {
+    @include media-breakpoint-down(md) {
         padding-bottom: 120px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 150px;
+    }
+}
+
+.choose-us {
+    @include media-breakpoint-down(md) {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -88,6 +136,10 @@
     line-height: 24.7px;
     @include reset-list;
     padding-bottom: 26px;
+    @include media-breakpoint-down(md) {
+        margin: auto 0;
+        font-size: 22px;
+    }
 }
 
 .clients-list {
@@ -128,6 +180,15 @@
 
 .skills-description-block {
     padding-bottom: 60px;
+    @include media-breakpoint-down(md) {
+        padding-bottom: 30px;
+    }
+}
+
+.skills-graph {
+    @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+    }
 }
 
 .graph-title {
@@ -138,10 +199,31 @@
     line-height: 19.2px;
     text-transform: uppercase;
     text-align: center;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 13px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 11px;
+    }
 }
 
 .graph-item {
-    padding-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+        width: 100px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 70px;
+    }
+}
+
+.graph-img {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+    }
 }
 
 .feedback-text {

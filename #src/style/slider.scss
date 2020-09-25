@@ -33,6 +33,12 @@
         @include button-style;
     }
 }
+.main-carousel-arrow-next,
+.main-carousel-arrow-prev {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
 
 .main-carousel-indicators .indicator-item {
     background-color: $grey-3;
