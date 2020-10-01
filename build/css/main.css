@@ -7419,13 +7419,14 @@ header .navbar .navbar-nav .nav-link,
   font-size: 40px;
   position: absolute;
   left: 0;
+  top: 0;
   width: 50px;
   height: 60px;
+  border-radius: 0 5px 5px 0;
   background-color: #e8645a;
   color: #ffffff;
   border-radius: 5px;
-  border-bottom: 3px solid #e2534b;
-  border-radius: 0 5px 5px 0; }
+  border-bottom: 3px solid #e2534b; }
 
 .main-carousel-arrow-next::after {
   content: "\f101";

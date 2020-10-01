@@ -1,59 +1,59 @@
 .main-carousel .carousel-item {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .main-carousel-arrow-prev {
-    &::before {
-        content: "\f100";
-        font-family: "FontAwesome";
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        width: 50px;
-        height: 60px;
+  &::before {
+    content: "\f100";
+    font-family: "FontAwesome";
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 60px;
+    border-radius: 0 5px 5px 0;
 
-        @include button-style;
-
-        border-radius: 0 5px 5px 0;
-    }
+    @include button-style;
+  }
 }
 
 .main-carousel-arrow-next {
-    &::after {
-        content: "\f101";
-        font-family: "FontAwesome";
-        font-size: 40px;
-        position: absolute;
-        right: 0;
-        width: 50px;
-        height: 60px;
-        border-radius: 5px 0 0 5px;
+  &::after {
+    content: "\f101";
+    font-family: "FontAwesome";
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 60px;
+    border-radius: 5px 0 0 5px;
 
-        @include button-style;
-    }
+    @include button-style;
+  }
 }
 .main-carousel-arrow-next,
 .main-carousel-arrow-prev {
-    @include media-breakpoint-down(md) {
-        display: none;
-    }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .main-carousel-indicators .indicator-item {
-    background-color: $grey-3;
-    width: 60px;
-    height: 5px;
+  background-color: $grey-3;
+  width: 60px;
+  height: 5px;
 }
 
 .main-carousel-indicators .active {
-    background-color: $burgundy;
+  background-color: $burgundy;
 }
 
 .main-carousel-indicators {
-    bottom: -55px;
+  bottom: -55px;
 }
 
 .main-carousel {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
